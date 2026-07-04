@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inserloft Docs</title>
+    <!--
+      GitHub Pages only serves static files, so a hard refresh or a direct link to
+      /docs/models/kyro returns a real 404 (there's no such file on disk).
+      This page stashes the intended path and bounces to "/", where index.html
+      restores it via history.replaceState before React Router takes over.
+      Based on the well-known spa-github-pages pattern (rafgraph/spa-github-pages).
+    -->
+    <script>
+      sessionStorage.redirect = location.href;
+    </script>
+    <meta http-equiv="refresh" content="0;URL='/'" />
+  </head>
+  <body></body>
+</html>

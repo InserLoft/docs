@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inserloft Docs</title>
+    <meta name="description" content="Documentación de Inserloft — Pixel Platform, Cleo, los modelos Kyro y Atom, y las APIs para desarrolladores." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#09090b" />
+
+    <!-- GitHub Pages SPA fallback: restore the real path that 404.html stashed in the query string -->
+    <script>
+      (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, '', redirect);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
